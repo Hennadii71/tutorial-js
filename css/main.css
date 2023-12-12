@@ -1,0 +1,57 @@
+body {
+  background-color: aqua;
+}
+
+ul {
+  list-style: none;
+}
+
+.title {
+  color: red;
+  margin: auto;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.one {
+  height: 160px;
+  width: 200px;
+  background-color: brown;
+  margin-top: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.two {
+  height: 100px;
+  width: 180px;
+  background-color: blue;
+  margin: auto;
+}
+
+.third {
+  height: 50px;
+  width: 160px;
+  background-color: yellow;
+  margin: auto;
+}
+
+.table {
+  width: 400px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+}
+
+.form {
+  margin: 24px 0 0 16px;
+}
+
+.title-section {
+  font-size: 36px;
+}
+
