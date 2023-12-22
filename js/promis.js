@@ -1,3 +1,4 @@
+
 // const pro = new Promise((resolve, reject) => {
 //   const value = 8;
 //   if (value >= 3) {
@@ -68,13 +69,11 @@ makePromise().then((result) => {
   console.log(result);
 });
 
-const promise = fetch("https://jsonplaceholder.typicode.com/posts/1")
-.then (res=>{
- return res.json()
+const promise = fetch("https://jsonplaceholder.typicode.com/photos/3")
+
+  .then((response) => response.json())
+  .then((text) => console.log(text));
+
   
-}).then(post=>{
-  console.log(post)
-})
-console.log(promise)
-  // .then((response) => response.json())
-  // .then((text) => console.log(text));
+
+
