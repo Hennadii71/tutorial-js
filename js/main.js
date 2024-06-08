@@ -1,38 +1,28 @@
-const allObjects = [
-  {
-    id: 1,
-    nickName: "Terehina",
-    area: 40,
-    parking: false,
-    services: ["світло", "газ", "холодна вода", "водовідведення гаряча вода"],
-  },
+const convertToRoman = (num) => {
+  const ref = [
+    ["M", 1000],
+    ["CM", 900],
+    ["D", 500],
+    ["CD", 400],
+    ["C", 100],
+    ["XC", 90],
+    ["L", 50],
+    ["XL", 40],
+    ["X", 10],
+    ["IX", 9],
+    ["V", 5],
+    ["IV", 4],
+    ["I", 1],
+  ];
+  const result = [];
+  ref.map((arr) => {
+    for (let i = 0; num >= arr[1]; i += 1) {
+      result.push(arr[0]);
+      num -= arr[1];
+    }
+  });
 
-  {
-    id: 2,
-    nickName: "Irpinska",
-    area: 45,
-    parking: false,
-    services: ["світло", "газ", "холодна вода", "водовідведення гаряча вода"],
-  },
+  return console.log(result.join(""));
+};
 
-  {
-    id: 3,
-    nickName: "Lukyanivka",
-    area: 100,
-    parking: true,
-    services: [
-      "світло",
-      "холодна вода",
-      "водовідведення гаряча вода",
-      "опалення",
-    ],
-  },
-
-  {
-    id: 4,
-    nickName: "Akvareli",
-    area: 50,
-    parking: true,
-    services: [],
-  },
-];
+convertToRoman(677);
