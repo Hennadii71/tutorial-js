@@ -25,4 +25,17 @@ const convertToRoman = (num) => {
   return console.log(result.join(""));
 };
 
-convertToRoman(677);
+convertToRoman(11);
+
+let counter = 0;
+
+
+  for (let index = 0; index < 2; index++) {
+    counter++;
+    
+  }
+
+
+
+
+console.log(counter);
